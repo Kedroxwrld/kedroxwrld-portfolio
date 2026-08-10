@@ -1,16 +1,6 @@
 "use client";
 
-import type { ElementType, ReactNode } from "react";
-import {
-  IconBrandGithub,
-  IconBrandTiktok,
-  IconBrandWhatsapp,
-  IconBrandYoutube,
-  IconHeart,
-  IconMail,
-  IconMapPin,
-  IconPhone,
-} from "@tabler/icons-react";
+import type { ReactNode } from "react";
 import { scrollToSection } from "@/lib/scroll";
 
 const quickLinks = [
@@ -26,13 +16,6 @@ const serviceLinks = [
   { id: "services", label: "Web Design" },
   { id: "services", label: "Product Design" },
   { id: "services", label: "Dashboard Design" },
-];
-
-const socials = [
-  { icon: IconBrandWhatsapp, label: "WhatsApp" },
-  { icon: IconBrandGithub, label: "GitHub" },
-  { icon: IconBrandTiktok, label: "TikTok" },
-  { icon: IconBrandYoutube, label: "YouTube" },
 ];
 
 export default function SiteFooter() {
@@ -62,18 +45,6 @@ export default function SiteFooter() {
             Crafting modern digital experiences — websites, dashboards and apps
             that look great and perform even better.
           </p>
-          <div className="mt-6 flex gap-3">
-            {socials.map((s) => (
-              <a
-                key={s.label}
-                href="#"
-                aria-label={s.label}
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/80 transition hover:-translate-y-1 hover:bg-primary hover:text-white"
-              >
-                <s.icon className="h-[18px] w-[18px]" />
-              </a>
-            ))}
-          </div>
         </div>
 
         <FooterCol title="Quick Links">
@@ -112,28 +83,22 @@ export default function SiteFooter() {
 
         <FooterCol title="Contact Info">
           <li>
-            <a href="tel:+256778698188" className="inline-flex items-center gap-2 transition hover:text-white">
-              <IconPhone className="h-4 w-4" /> +256 778 698 188
+            <a href="tel:+256778698188" className="inline-flex transition hover:text-white">
+              +256 778 698 188
             </a>
           </li>
           <li>
-            <a href="mailto:kedroxwrld33@gmail.com" className="inline-flex items-center gap-2 transition hover:text-white">
-              <IconMail className="h-4 w-4" /> kedroxwrld33@gmail.com
+            <a href="mailto:kedroxwrld33@gmail.com" className="inline-flex transition hover:text-white">
+              kedroxwrld33@gmail.com
             </a>
           </li>
-          <li className="inline-flex items-center gap-2">
-            <IconMapPin className="h-4 w-4" /> Kampala, Uganda
-          </li>
+          <li className="inline-flex">Kampala, Uganda</li>
         </FooterCol>
       </div>
 
       <div className="container relative flex flex-col items-center justify-between gap-3 py-6 text-sm text-white/50 md:flex-row">
         <p>© 2024 KEDROXWRLD. All rights reserved.</p>
-        <p className="flex items-center gap-1.5">
-          Designed &amp; built with{" "}
-          <IconHeart className="h-4 w-4 fill-[#FF6B8A] text-[#FF6B8A]" /> by
-          Kabiito Kevin
-        </p>
+        <p>Designed &amp; built by Kabiito Kevin</p>
       </div>
     </footer>
   );
