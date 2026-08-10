@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="KEDROXWRLD  Full-Stack Developer & UI/UX Designer based in Uganda. Crafting modern web apps, dashboards and product experiences." />
+  <meta name="theme-color" content="#5B32E8" />
+  <title>KEDROXWRLD Full-Stack Developer & UI/UX Designer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ======================= HEADER / STICKY GLASS NAV ======================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand" aria-label="KEDROXWRLD home">
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 3 42 14.2v19.6L24 45 6 33.8V14.2L24 3Z" fill="url(#lg1)"/>
+            <path d="M24 12.5 34 18.25v11.5L24 35.5l-10-5.75v-11.5L24 12.5Z" fill="#fff" opacity=".95"/>
+            <defs>
+              <linearGradient id="lg1" x1="6" y1="3" x2="42" y2="45" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#6C5CE7"/><stop offset="1" stop-color="#5B32E8"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="brand-text">KEDROX<span>WRLD</span></span>
+      </a>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <a href="#home" class="nav-link is-active">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#work" class="nav-link">Portfolio</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm cta-cta">HIRE ME <span class="arrow" aria-hidden="true">→</span></a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-head">
+      <a href="#home" class="brand">
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 3 42 14.2v19.6L24 45 6 33.8V14.2L24 3Z" fill="url(#lg2)"/>
+            <path d="M24 12.5 34 18.25v11.5L24 35.5l-10-5.75v-11.5L24 12.5Z" fill="#fff" opacity=".95"/>
+            <defs>
+              <linearGradient id="lg2" x1="6" y1="3" x2="42" y2="45" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#6C5CE7"/><stop offset="1" stop-color="#5B32E8"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="brand-text">KEDROX<span>WRLD</span></span>
+      </a>
+      <button class="icon-btn" id="drawerClose" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <nav class="drawer-links" aria-label="Mobile">
+      <a href="#home" class="drawer-link">Home</a>
+      <a href="#services" class="drawer-link">Services</a>
+      <a href="#work" class="drawer-link">Portfolio</a>
+      <a href="#about" class="drawer-link">About</a>
+      <a href="#contact" class="drawer-link">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn-primary btn-block drawer-cta">HIRE ME <span class="arrow" aria-hidden="true">→</span></a>
+    <div class="drawer-social">
+      <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-2.9-1.3-4.8-4.2-5-4.4-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.4.7-.4h.5c.2 0 .4-.1.6.5.2.6.7 2 .8 2.1.1.2.1.3 0 .5l-.3.5c-.2.2-.3.4-.1.6.2.2.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l1-1.2c.2-.2.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.6-.1 1.3Z"/></svg></a>
+      <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg></a>
+      <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.6 5.84a5.4 5.4 0 0 1-3.2-3.72c-.1-.43-.15-.7-.15-1.12h-3.4v13.3c0 1.7-1.38 3.08-3.08 3.08a3.08 3.08 0 0 1-3.08-3.08c0-1.7 1.38-3.08 3.08-3.08.33 0 .64.05.94.15v-3.5a6.6 6.6 0 0 0-.94-.07A6.58 6.58 0 1 0 13.3 16.5V8.66a8.9 8.9 0 0 0 4.3 1.2V6.4c-.2 0-.44-.02-.7-.04.4-.18.67-.35.7-.52Z"/></svg></a>
+      <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.12-2.12C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.58A3 3 0 0 0 .5 6.2A31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.12 2.12c1.88.58 9.38.58 9.38.58s7.5 0 9.38-.58a3 3 0 0 0 2.12-2.12A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12l-6.2 3.6Z"/></svg></a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- ======================= HERO ======================= -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="pill hero-badge reveal">
+            <span class="pill-dot" aria-hidden="true"></span>
+            👋 WELCOME TO KEDROXWRLD
+          </span>
+
+          <h1 class="hero-title reveal">
+            I'm Kabiito Kevin,<br />
+            <span class="grad-text">Full-Stack Developer</span><br />
+            Based In <span class="grad-text">Uganda</span>
+          </h1>
+
+          <p class="hero-sub reveal">
+            I design and build modern websites, dashboards and mobile experiences
+            that are fast, accessible and built to convert — from clean UI/UX to
+            robust full-stack engineering.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a href="#work" class="btn btn-primary btn-lg magnetic">VIEW MY WORK <span class="arrow" aria-hidden="true">→</span></a>
+            <a href="#contact" class="btn btn-ghost btn-lg">Let's Talk</a>
+          </div>
+
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="portrait-wrap">
+            <div class="portrait-blob">
+              <!-- 📷 YOUR HERO PORTRAIT: drop your photo into the assets folder,
+                   then change "hero-portrait.svg" below to your file, e.g. "hero-portrait.jpg" -->
+              <img src="assets/Kevin.jpg" alt="Portrait of Kevin" class="portrait-img" />
+            </div>
+
+            <div class="float-badge fb-1">
+              <span class="dot-purple" aria-hidden="true"></span>
+              UI/UX Designer
+            </div>
+           
+            <div class="float-badge fb-3">
+              Full-Stack Developer
+            </div>
+
+            <svg class="doodle doodle-bolt" viewBox="0 0 64 64" aria-hidden="true"><path d="M34 4 10 36h14l-6 24 26-34H29l5-22Z" fill="#FFC048"/></svg>
+            <svg class="doodle doodle-curve" viewBox="0 0 120 60" fill="none" aria-hidden="true"><path d="M8 44C32 6 84 6 112 40" stroke="#6C5CE7" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 12"/></svg>
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-glow" aria-hidden="true"></div>
+    </section>
+
+    <!-- ======================= SERVICES ======================= -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="pill pill-outline">• MY SERVICES •</span>
+          <h2 class="section-title">Solution We Provide For Your <span class="grad-text">Works</span></h2>
+          <p class="section-sub">From first sketch to final deploy — a full spectrum of design and development services that move your business forward.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="services-stack">
+            <article class="service-card glass reveal">
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.8 2.8 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3Z"/></svg>
+              </div>
+              <div class="service-info">
+                <h3>UI/UX Design</h3>
+                <p>User-centered interfaces &amp; delightful product flows that keep people engaged.</p>
+              </div>
+              <a href="#contact" class="circle-btn" aria-label="UI/UX Design — learn more"><span class="arrow" aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="service-card glass reveal">
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              </div>
+              <div class="service-info">
+                <h3>Web Design</h3>
+                <p>Responsive, high-performance websites engineered for speed and conversions.</p>
+              </div>
+              <a href="#contact" class="circle-btn" aria-label="Web Design — learn more"><span class="arrow" aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="service-card glass reveal">
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5V8Z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg>
+              </div>
+              <div class="service-info">
+                <h3>Product Design</h3>
+                <p>End-to-end digital product thinking — research, strategy, and polished builds.</p>
+              </div>
+              <a href="#contact" class="circle-btn" aria-label="Product Design — learn more"><span class="arrow" aria-hidden="true">→</span></a>
+            </article>
+          </div>
+
+          <div class="services-visual reveal">
+            <div class="tablet">
+              <div class="tablet-notch" aria-hidden="true"></div>
+              <div class="tablet-screen">
+                <div class="dash-top">
+                  <div class="dash-title"><span class="dash-caret" aria-hidden="true"></span> Analytics Overview</div>
+                  <div class="dash-avatars" aria-hidden="true"><span></span><span></span><span></span></div>
+                </div>
+                <div class="dash-kpis">
+                  <div class="kpi"><span class="kpi-num">$84.2k</span><span class="kpi-label">Revenue</span><span class="kpi-trend up">▲ 12.4%</span></div>
+                  <div class="kpi"><span class="kpi-num">2,480</span><span class="kpi-label">Users</span><span class="kpi-trend down">▼ 1.8%</span></div>
+                </div>
+                <div class="dash-chart" aria-hidden="true">
+                  <div class="chart-bars">
+                    <span style="--h:34%"></span><span style="--h:58%"></span><span style="--h:42%"></span><span style="--h:74%"></span><span style="--h:50%"></span><span style="--h:88%"></span><span style="--h:66%"></span>
+                  </div>
+                </div>
+                <div class="dash-rows">
+                  <div class="dash-row"><span class="row-label">Marketing</span><div class="row-track"><span style="--w:78%"></span></div><span class="row-val">78%</span></div>
+                  <div class="dash-row"><span class="row-label">Sales</span><div class="row-track"><span style="--w:54%"></span></div><span class="row-val">54%</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dash-glass dg-1">
+              <span class="dg-dot" aria-hidden="true"></span>
+              <div><strong>+38%</strong><small>Growth</small></div>
+            </div>
+            <div class="dash-glass dg-2">
+              <span class="dg-spark" aria-hidden="true">⚡</span>
+              <div><strong>1.2k</strong><small>Active Users</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= PORTFOLIO ======================= -->
+    <section class="section section-tint" id="work">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="pill pill-outline">• MY PROJECTS •</span>
+          <h2 class="section-title">My <span class="grad-text">Projects</span></h2>
+          <p class="section-sub">A curated selection of products I've designed, developed and shipped across web and mobile.</p>
+        </div>
+
+        <div class="work-grid" id="workGrid">
+
+          <!-- 📷 PROJECT TEMPLATE 1 — DASHBOARD
+               Put your screenshot in the assets folder, then change the src below,
+               e.g. src="assets/my-dashboard.png" -->
+          <article class="work-card glass reveal">
+            <div class="work-thumb">
+              <img src="assets/Electric Dashboard Website.png" alt="Dashboard Application preview" loading="lazy" />
+            </div>
+            <div class="work-meta">
+              <div>
+                <h3>Dashboard Application</h3>
+                <span class="work-tag">Web Application</span>
+              </div>
+              <a href="#contact" class="circle-btn" aria-label="Dashboard Application project"><span class="arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <!-- 📷 PROJECT TEMPLATE 2 — E-COMMERCE
+               Put your screenshot in the assets folder, then change the src below,
+               e.g. src="assets/my-ecommerce.png" -->
+          <article class="work-card glass reveal">
+            <div class="work-thumb">
+              <img src="assets/electric website.png" alt="E-Commerce Website preview" loading="lazy" />
+            </div>
+            <div class="work-meta">
+              <div>
+                <h3>E-Commerce Website</h3>
+                <span class="work-tag">Web Design</span>
+              </div>
+              <a href="#contact" class="circle-btn" aria-label="E-Commerce Website project"><span class="arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <!-- 📷 PROJECT TEMPLATE 3 — MOBILE BANKING APP
+               Put your screenshot in the assets folder, then change the src below,
+               e.g. src="assets/my-banking-app.png" -->
+          <article class="work-card glass reveal work-card-extra">
+            <div class="work-thumb">
+              <img src="assets/portfolio website 1.png" alt="Portfolio Website preview" loading="lazy" />
+            </div>
+            <div class="work-meta">
+              <div>
+                <h3>Portfolio Website</h3>
+                <span class="work-tag">Web Design</span>
+              </div>
+              <a href="#contact" class="circle-btn" aria-label="Portfolio Website project"><span class="arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <!-- 📷 PROJECT TEMPLATE 4 — TRAVEL WEBSITE
+               Put your screenshot in the assets folder, then change the src below,
+               e.g. src="assets/my-travel-website.png" -->
+          <article class="work-card glass reveal work-card-extra">
+            <div class="work-thumb">
+              <img src="assets/lumenreel home page.png" alt="Travel Website preview" loading="lazy" />
+            </div>
+            <div class="work-meta">
+              <div>
+                <h3>Travel Website</h3>
+                <span class="work-tag">Web Design</span>
+              </div>
+              <a href="#contact" class="circle-btn" aria-label="Travel Website project"><span class="arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="work-cta reveal">
+          <button type="button" class="btn btn-outline btn-lg" id="workToggle">VIEW ALL PROJECTS <span class="arrow" aria-hidden="true">→</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= ABOUT ======================= -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-visual reveal">
+          <div class="about-blob">
+            <!-- 📷 YOUR ABOUT PORTRAIT: drop your photo into the assets folder,
+                 then change "about-portrait.svg" below to your file, e.g. "about-portrait.jpg" -->
+            <img src="assets/Kevin.jpg" alt="Portrait of Kevin" class="about-img" />
+          </div>
+          <span class="float-tag ft-1">Dashboard</span>
+          <span class="float-tag ft-2 dark">Wireframe</span>
+          <span class="float-tag ft-3">Web Designer</span>
+          <span class="float-tag ft-4">UI/UX Design</span>
+        </div>
+
+        <div class="about-copy">
+          <span class="pill pill-outline reveal">• ABOUT ME •</span>
+          <h2 class="section-title reveal">Who's Behind All This <span class="grad-text">Great Work?</span></h2>
+          <p class="reveal">
+            I'm Kevin the creative engine behind KEDROXWRLD. For years I've helped
+            startups, agencies and businesses turn rough ideas into polished digital
+            products. I live at the intersection of design and code: prototyping the
+            pixel-perfect UI, then shipping the scalable full-stack build behind it.
+          </p>
+          <p class="reveal">
+            When I'm not designing or developing, I'm researching new tools, teaching
+            what I learn, and finding smarter ways to make the web feel good.
+          </p>
+          <p class="about-more" id="aboutMore">
+            I partner with you from first concept to final deploy — running design
+            sprints, prototyping, building scalable front-ends and robust APIs, and
+            polishing every interaction until it feels effortless. My goal is simple:
+            ship products that people love to use and businesses love to measure.
+          </p>
+
+          <div class="stats reveal">
+            <div class="stat">
+              <span class="stat-num" data-count="100" data-suffix="+">0</span>
+              <span class="stat-label">Clients</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="90" data-suffix="+">0</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="3" data-suffix="+">0</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+          </div>
+
+          <div class="reveal">
+            <button type="button" class="btn btn-primary btn-lg magnetic" id="aboutToggle">READ MORE <span class="arrow" aria-hidden="true">→</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= CONTACT / CTA ======================= -->
+    <section class="section section-pad-sm" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="contact-badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 14.5v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 4.5 5.2 2 2 0 0 1 6.5 3h3a2 2 0 0 1 2 1.7c.13.95.36 1.88.7 2.76a2 2 0 0 1-.45 2.1l-1.27 1.27a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.1-.45c.88.34 1.81.57 2.76.7A2 2 0 0 1 21 14.5Z"/></svg>
+          </div>
+          <h2 class="contact-title">Let's Work Together</h2>
+          <p class="contact-sub">I'm available for freelance work. Let's discuss your project!</p>
+          <a href="https://wa.me/256778698188" target="_blank" rel="noopener" class="btn btn-white btn-lg magnetic">HIRE ME <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="brand brand-light">
+            <span class="brand-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 3 42 14.2v19.6L24 45 6 33.8V14.2L24 3Z" fill="url(#lg3)"/>
+                <path d="M24 12.5 34 18.25v11.5L24 35.5l-10-5.75v-11.5L24 12.5Z" fill="#fff" opacity=".95"/>
+                <defs>
+                  <linearGradient id="lg3" x1="6" y1="3" x2="42" y2="45" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#6C5CE7"/><stop offset="1" stop-color="#5B32E8"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </span>
+            <span class="brand-text">KEDROX<span>WRLD</span></span>
+          </a>
+          <p class="footer-mission">Crafting modern digital experiences — websites, dashboards and apps that look great and perform even better.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.1c-.2.7-1.3 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-2.9-1.3-4.8-4.2-5-4.4-.1-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.4.7-.4h.5c.2 0 .4-.1.6.5.2.6.7 2 .8 2.1.1.2.1.3 0 .5l-.3.5c-.2.2-.3.4-.1.6.2.2.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l1-1.2c.2-.2.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.6-.1 1.3Z"/></svg></a>
+            <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.6 5.84a5.4 5.4 0 0 1-3.2-3.72c-.1-.43-.15-.7-.15-1.12h-3.4v13.3c0 1.7-1.38 3.08-3.08 3.08a3.08 3.08 0 0 1-3.08-3.08c0-1.7 1.38-3.08 3.08-3.08.33 0 .64.05.94.15v-3.5a6.6 6.6 0 0 0-.94-.07A6.58 6.58 0 1 0 13.3 16.5V8.66a8.9 8.9 0 0 0 4.3 1.2V6.4c-.2 0-.44-.02-.7-.04.4-.18.67-.35.7-.52Z"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.12-2.12C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.58A3 3 0 0 0 .5 6.2A31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.12 2.12c1.88.58 9.38.58 9.38.58s7.5 0 9.38-.58a3 3 0 0 0 2.12-2.12A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12l-6.2 3.6Z"/></svg></a>
+          </div>
+        </div>
+
+        <nav class="footer-col footer-accordion" data-accordion>
+          <h4 class="footer-head">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col footer-accordion" data-accordion>
+          <h4 class="footer-head">Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">UI/UX Design</a></li>
+            <li><a href="#services">Web Design</a></li>
+            <li><a href="#services">Product Design</a></li>
+            <li><a href="#services">Dashboard Design</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col footer-accordion" data-accordion>
+          <h4 class="footer-head">Contact Info</h4>
+          <ul class="footer-links footer-contact">
+            <li><a href="tel:+256778698188">📞 +256 778 698 188</a></li>
+            <li><a href="mailto:kedroxwrld33@gmail.com">✉️ kedroxwrld33@gmail.com</a></li>
+            <li><a href="#" aria-label="Location"> 📍 Kampala, Uganda</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 KEDROXWRLD. All rights reserved.</p>
+        <p>Designed &amp; built with <span class="heart" aria-hidden="true">♥</span> by Kevin</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>

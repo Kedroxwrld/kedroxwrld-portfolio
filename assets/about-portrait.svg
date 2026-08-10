@@ -1,0 +1,7 @@
+<svg viewBox="0 0 300 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="About portrait placeholder — replace with your photo">
+  <circle cx="150" cy="118" r="58" fill="#F9F8FD"/>
+  <path d="M150 158c-52 0-95 36-103 84l-1 10h208l-1-10c-8-48-51-84-103-84Z" fill="#F9F8FD"/>
+  <path d="M150 82c0 22 11 38 30 44-4-4-6-10-6-17 0-16 9-29 22-35-5-1-9-2-13-2h-4c-14 0-27 4-37 10h2a40 40 0 0 0 6 0Z" fill="#3A3546"/>
+  <circle cx="152" cy="72" r="4" fill="#5B32E8"/>
+  <rect x="70" y="246" width="160" height="26" rx="13" fill="#F9F8FD"/>
+</svg>

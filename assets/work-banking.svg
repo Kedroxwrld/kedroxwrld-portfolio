@@ -1,0 +1,19 @@
+<svg viewBox="0 0 800 550" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#2A2640"/><stop offset="1" stop-color="#0E0C1C"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="550" fill="url(#bg)"/>
+  <rect x="540" y="50" width="200" height="420" rx="34" fill="#12111A" stroke="#3A3560" stroke-width="6"/>
+  <rect x="560" y="110" width="160" height="320" rx="18" fill="#241F3C"/>
+  <rect x="580" y="140" width="120" height="16" rx="8" fill="#FFFFFF" opacity="0.5"/>
+  <rect x="580" y="180" width="120" height="10" rx="5" fill="#6C5CE7" opacity="0.9"/>
+  <rect x="580" y="210" width="120" height="10" rx="5" fill="#FFFFFF" opacity="0.2"/>
+  <rect x="580" y="260" width="56" height="56" rx="16" fill="#6C5CE7"/>
+  <rect x="648" y="260" width="52" height="56" rx="16" fill="#FFFFFF" opacity="0.15"/>
+  <rect x="580" y="340" width="120" height="14" rx="7" fill="#FFFFFF" opacity="0.3"/>
+  <rect x="580" y="366" width="90" height="14" rx="7" fill="#FFFFFF" opacity="0.2"/>
+  <text x="400" y="330" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#FFFFFF" letter-spacing="4">YOUR APP SCREEN</text>
+  <text x="400" y="370" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="600" fill="#9CA0AA" letter-spacing="2">Replace with your mobile app screenshot</text>
+</svg>
