@@ -6,6 +6,7 @@ import { IconArrowUp } from "@tabler/icons-react";
 import Reveal from "@/components/reveal";
 import CountUp from "@/components/count-up";
 import { Button } from "@/components/ui/button";
+import { basePath } from "@/lib/base-path";
 
 const stats = [
   { value: 100, suffix: "+", label: "Clients" },
@@ -23,7 +24,7 @@ export default function About() {
           <div className="relative mx-auto w-full max-w-sm">
             <div className="blob relative aspect-square overflow-hidden">
               <img
-                src="/assets/Kevin.jpg"
+                src={`${basePath}/assets/Kevin.jpg`}
                 alt="Portrait of Kabiito Kevin"
                 className="absolute inset-0 h-full w-full object-cover object-top"
               />

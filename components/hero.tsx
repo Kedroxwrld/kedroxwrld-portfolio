@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { IconArrowRight, IconBolt } from "@tabler/icons-react";
 import { Button } from "@/components/ui/button";
 import { scrollToSection } from "@/lib/scroll";
+import { basePath } from "@/lib/base-path";
 
 export default function Hero() {
   return (
@@ -80,7 +81,7 @@ export default function Hero() {
         >
           <div className="blob relative aspect-[1/1.04] overflow-hidden">
             <img
-              src="/assets/Kevin.jpg"
+              src={`${basePath}/assets/Kevin.jpg`}
               alt="Portrait of Kabiito Kevin"
               className="absolute inset-0 h-full w-full object-cover object-top"
             />
