@@ -51,11 +51,14 @@ export default function About() {
               Who's Behind All This <span className="text-gradient">Great Work?</span>
             </h2>
             <p className="mt-4 max-w-[54ch] text-muted-foreground">
-              I'm Kabiito Kevin, the creative engine behind KEDROXWRLD. For
-              years I've helped startups, agencies and businesses turn rough
-              ideas into polished digital products. I live at the intersection
-              of design and code: prototyping the pixel-perfect UI, then
-              shipping the scalable full-stack build behind it.
+              <b>Mission:</b> To engineer robust, scalable web and mobile applications while crafting intuitive, visually stunning user experiences. 
+              By bridging the gap between front-end aesthetics and backend logic, I transform complex problems into seamless, end-to-end digital solutions.
+              <BR></BR>
+
+              <b> Vision:</b>To empower businesses and brands through digital innovation, becoming a leading creative technologist who delivers pixel-perfect, 
+              high-performing applications that drive real-world impact across web and mobile platforms.
+              <BR></BR>
+
             </p>
             <p className="mt-4 max-w-[54ch] text-muted-foreground">
               When I'm not designing or developing, I'm researching new tools,
